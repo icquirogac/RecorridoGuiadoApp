@@ -9,6 +9,7 @@ public class Saver {
     public int penalizacion;
     public int pos;
     public boolean won;
+
     public Saver(Estacion[] rut){
         start = Calendar.getInstance().getTime();
         ruta = rut;

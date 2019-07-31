@@ -5,14 +5,14 @@ import java.util.Date;
 
 public class Estacion {
 
-    public String srcImage;
-    public String nombre;
-    public String info;
-    public String pista;
-    public Pregunta[] pregunta;
-    public boolean isBlocked;
-    public Date stamp;
-    public int password;
+    public String srcImage;         //Direccion de la imagen de la estacion
+    public String nombre;           //Nombre del edificio 401 - hdsa
+    public String info;             //Historia
+    public String pista;            //Como llegar a la estacion
+    public Pregunta[] pregunta;     //5 Preguntas del lugar
+    public boolean isBlocked;           //
+    public Date stamp;                  //La hora en la que llego
+    public int password;                //eL Año en el que el edifico se inauguro
     public boolean preguntaIsBlocked;
 
     public Estacion(String image, String name, String information, String hint, Pregunta[] preg, int pass){
