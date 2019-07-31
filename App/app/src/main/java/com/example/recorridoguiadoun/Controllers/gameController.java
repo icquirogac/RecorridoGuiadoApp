@@ -31,12 +31,16 @@ public class gameController {
         saver = gson.fromJson(json, Saver.class);
     }
 
-    public static String getPregunta(){
+    public static String[] getPregunta(){
         Estacion est = saver.ruta[saver.pos];
-
+        String salida[] = new String[5];
         int i = (int)(Math.random()*(est.pregunta.length-1));
         nPregunta = i;
-        return est.pregunta[i].pregunta;
+        salida[0] = est.pregunta[i].pregunta;
+        for (int j = 0; j <est.pregunta[i].respuestas.length ; j++) {
+            salida[j+1] = est.pregunta[i].respuestas[j];
+        }
+        return salida;
     }
 
     public static boolean setRuta(String password){

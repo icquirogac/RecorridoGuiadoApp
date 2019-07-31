@@ -1,5 +1,6 @@
 package com.example.recorridoguiadoun.Activity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ import com.example.recorridoguiadoun.R;
 public class MainActivity extends AppCompatActivity {
 
     public SharedPreferences mPrefs;
+
     Button startBut;
     TextView pass;
     @Override
@@ -23,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mPrefs = getPreferences(MODE_PRIVATE);
+        gameController.loadGame(mPrefs);
+        if (gameController.saver != null) {
+            Intent i = new Intent(MainActivity.this, prueba.class);
+            startActivity(i);
+        }
         startBut = (Button) findViewById(R.id.startButton);
         pass = (TextView) findViewById(R.id.pass);
         startBut.setOnClickListener(new View.OnClickListener() {
@@ -33,9 +40,11 @@ public class MainActivity extends AppCompatActivity {
 
                 if (gameController.setRuta(password)){
                     gameController.saveGame(mPrefs);
-                    //Intent
+                    //Intent i = new Intent(MainActivity.this, prueba.class);
+                    //startActivity(i);
                 }else{
-                    //Toast diciendo que contraseña invalida, intente de nuevo
+                    pass.setText("");
+                    Toast.makeText(getApplicationContext(),"Contraseña incorrecta",Toast.LENGTH_SHORT).show();
                 }
             }
         });
