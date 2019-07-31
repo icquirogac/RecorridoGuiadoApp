@@ -4,6 +4,7 @@ package com.example.recorridoguiadoun.Models;
 import java.util.Date;
 
 public class Estacion {
+
     public String srcImage;
     public String nombre;
     public String info;

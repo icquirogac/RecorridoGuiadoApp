@@ -15,13 +15,14 @@ import com.example.recorridoguiadoun.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    public SharedPreferences mPrefs = getPreferences(MODE_PRIVATE);
+    public SharedPreferences mPrefs;
     Button startBut;
     TextView pass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mPrefs = getPreferences(MODE_PRIVATE);
         startBut = (Button) findViewById(R.id.startButton);
         pass = (TextView) findViewById(R.id.pass);
         startBut.setOnClickListener(new View.OnClickListener() {

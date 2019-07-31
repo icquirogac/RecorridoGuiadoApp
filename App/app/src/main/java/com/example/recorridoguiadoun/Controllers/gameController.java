@@ -24,6 +24,7 @@ public class gameController {
         prefsEditor.putString("Saver", json);
         prefsEditor.commit();
     }
+
     public static void loadGame(SharedPreferences sharedPreferences){
         Gson gson = new Gson();
         String json = sharedPreferences.getString("Saver", "");
@@ -40,11 +41,7 @@ public class gameController {
 
     public static boolean setRuta(String password){
         switch (password){
-            case "vivalaun":
-                Estacion[] ruta = new Estacion[11];
-                ruta[0] = Constants.estaciones[0];
-                saver = new Saver(ruta);
-                break;
+            case "vivalaun":    saver = new Saver(Constants.r1);    break;
             case "ingenieria":
                 break;
             case "induccion":
@@ -69,13 +66,15 @@ public class gameController {
     public static void won(){
         saver.won = true;
         saver.pos = -1;
-        saver.finish =  Calendar.getInstance().getTime();
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.SECOND, 15*saver.penalizacion);
+        saver.finish = calendar.getTime();
     }
 
     public static boolean verifyAnswer(int intento){
         Estacion est = saver.ruta[saver.pos];
         if (est.pregunta[nPregunta].resCorrecta==intento){
-            est.preguntaIsBlocked=false;
+            est.preguntaIsBlocked=true;
             if (saver.pos==saver.ruta.length-1) {
                 won();
             }else{
@@ -91,6 +90,7 @@ public class gameController {
         if (saver.ruta[saver.pos].password==pass){
             saver.ruta[saver.pos].stamp = Calendar.getInstance().getTime();
             saver.ruta[saver.pos].preguntaIsBlocked = false;
+            saver.ruta[saver.pos].isBlocked = false;
             return true;
         }
         saver.penalizacion++;

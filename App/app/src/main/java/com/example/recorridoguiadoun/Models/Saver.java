@@ -13,7 +13,7 @@ public class Saver {
         start = Calendar.getInstance().getTime();
         ruta = rut;
         penalizacion = 0;
-        pos=0;
-        won=false;
+        pos = 0;
+        won = false;
     }
 }
