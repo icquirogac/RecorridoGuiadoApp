@@ -177,6 +177,23 @@ public final class Constants {
                     new String[]{"8", "6","11","10"},
                     3)
     };
+    public static Pregunta preguntasCentral[] = {
+            new Pregunta("¿Qué procedimiento realiza el estudiante para ingresar a los grupos de estudio?",
+                    new String[]{"Nada. Por ser parte de la Universidad puede entrar y salir sin ningún requisito.", "Se registra en la sala de estudio, selecciona la materia que desea estudiar en la sesión, escoge el nombre de la persona que le va a explicar.","Pasa una carta al comité asesor de Facultad para que le den permiso de estudiar en la sala.","Debe pagar 50.000 para ingresar."},
+                    1),
+            new Pregunta("¿Cuál es el requisito para poder hacer uso de los equipos informáticos?",
+                    new String[]{"Pagar dependiendo del tiempo.", "Ingresar su usuario y contraseña del correo institucional.","Radiar una carta en el CADE para que le presten la sala.","Pedirle permiso al personal de vigilancia."},
+                    1),
+            new Pregunta("¿Cuál es el nombre del edificio situado al respaldo de la sala central de informática?",
+                    new String[]{"Aulas de Ingeniería", "Comedor central","Edificio de Enfermería","Biblioteca Central"},
+                    2),
+            new Pregunta("¿En qué piso quedan ubicados los baños para mujeres y hombres?",
+                    new String[]{"Primero", "Segundo","Tercero","No hay baños"},
+                    1),
+            new Pregunta("¿Cómo se llama el lugar donde venden implementos identificados con el logo de la Universidad Nacional de Colombia?",
+                    new String[]{"Chaza UNAL", "Tienda de la Nacho","Tienda Universitaria (TU)","No hay tiendas en la Universidad Nacional de Colombia"},
+            2)
+    };
 
     public static Estacion[] estaciones = {
             new Estacion(
@@ -195,7 +212,7 @@ public final class Constants {
                     2000),
             new Estacion(
                     R.drawable.e214,
-                    "e214 - Antonio Nariño",
+                    "214 - Antonio Nariño",
                     "Construido entre 1940-1941; Edificio Residencial de carácter longitudinal, alto y estrecho que hace parte de la significativa arquitectura racional y blanca de la Universidad.Complemento estilístico y urbano del  edificio Francisco de Paula Santander que lo enfrenta y lo complementa.\nÁrea: 2.853 m2\nArq.: Juan Bonilla Plata.",
                     "Al sur del campus universitario, entre dos próceres de nuestra independencia  en una banca encontrarás la palabra  “Digna Rabia ”cerca  a esa banca la siguiente pista encontrarás y al hogar de snoopy deberás entrar.",
                     preguntas214,
@@ -260,11 +277,11 @@ public final class Constants {
                     1971),
             new Estacion(
                     R.drawable.computadores,
-                    "sala de informatioca",
-                    "falta",
-                    "falta",
-                    preguntas214,
-                    0000),
+                    "477 - Sala Central de Informática",
+                    "Este edificio se construyó en 1964 (Inaugurado en 1965) para recibir la carrera de Arquitectura, que tenía su sede en el actual edificio de Bellas Artes. \"Un bello edificio diseñado por alemanes en estilo Bauhaus.",
+                    "Este edificio se encuentra ubicado enfrente del Polideportivo.",
+                    preguntasCentral,
+                    1965),
 
     };
     public static Estacion[] r1 = {estaciones[0],estaciones[1],estaciones[2],estaciones[3],estaciones[4],estaciones[5],estaciones[6],estaciones[7],estaciones[8],estaciones[9],estaciones[10]};

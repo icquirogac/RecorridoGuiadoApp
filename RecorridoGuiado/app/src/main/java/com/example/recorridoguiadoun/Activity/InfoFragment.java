@@ -49,21 +49,23 @@ public class InfoFragment extends Fragment {
         imagen.setImageResource(estacion.srcImage);
         titulo.setText(estacion.nombre);
         info.setText(estacion.info);
-        String preguntas[] = GameController.getPregunta();
-        pregunta.setText(preguntas[0]);
-        List<String> dataList = new ArrayList<String>();
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(myView.getContext(), android.R.layout.simple_list_item_1,dataList);
-        dataList.add(preguntas[1]);
-        dataList.add(preguntas[2]);
-        dataList.add(preguntas[3]);
-        dataList.add(preguntas[4]);
+
         preferences = this.getActivity().getPreferences(Context.MODE_PRIVATE);
 
 
-        respuestas.setAdapter(arrayAdapter);
         if (GameController.saver.estacionActual.preguntaIsBlocked) {
             respuestas.setVisibility(View.GONE);
             pregunta.setVisibility(View.GONE);
+        }else{
+            String preguntas[] = GameController.getPregunta();
+            pregunta.setText(preguntas[0]);
+            List<String> dataList = new ArrayList<String>();
+            ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(myView.getContext(), android.R.layout.simple_list_item_1,dataList);
+            dataList.add(preguntas[1]);
+            dataList.add(preguntas[2]);
+            dataList.add(preguntas[3]);
+            dataList.add(preguntas[4]);
+            respuestas.setAdapter(arrayAdapter);
         }
 
         respuestas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -75,7 +77,7 @@ public class InfoFragment extends Fragment {
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
                 }else {
-                    Toast.makeText(myView.getContext(),"Respuesta Incorrecta, Penalizacion de 15 Segundos",Toast.LENGTH_LONG).show();
+                    Toast.makeText(myView.getContext(),"Respuesta Incorrecta, Penalización de 15 Segundos",Toast.LENGTH_LONG).show();
                     String preguntas[] = GameController.getPregunta();
                     pregunta.setText(preguntas[0]);
                     List<String> dataList = new ArrayList<String>();

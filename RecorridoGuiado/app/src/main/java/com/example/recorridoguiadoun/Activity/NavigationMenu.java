@@ -27,10 +27,6 @@ public class NavigationMenu extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     public SharedPreferences mPrefs;
 
-    private static NavigationMenu menu;
-    private static String[] titles;
-    private Menu internalMenu;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,8 +64,20 @@ public class NavigationMenu extends AppCompatActivity
                         .commit();
                 break;
         }
-        GameController.updateMenuItems();
-        menu = this;
+        NavigationView navigationView1 = findViewById(R.id.nav_view);
+        Menu menu = navigationView1.getMenu();
+        String titles[] = GameController.updateMenuItems();
+        MenuItem menuItem;
+
+        for (int i = 0; i < titles.length; i++) {
+            if (titles[i] != null) {
+                menuItem = getMenuItemByStationId(i,menu);
+                menuItem.setTitle(titles[i]);
+                menuItem.setIcon(R.drawable.ic_done_all_black_24dp);
+                menuItem.setEnabled(true);
+            }
+        }
+
     }
 
     @Override
@@ -80,35 +88,7 @@ public class NavigationMenu extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
 
-        getMenuInflater().inflate(R.menu.navigation_menu, menu);
-
-        this.internalMenu = menu;
-
-        return true;
-    }
-
-
-    private void update(){
-        MenuItem item;
-
-        System.out.println("->->->" + Arrays.toString(titles));
-
-        if(titles == null) return;
-
-        for(int i = 0; i < titles.length; i++){
-
-            if(titles[i] != null && (item = getMenuItemByStationId(i)) != null){
-                item.setTitle(titles[i]);
-                item.setEnabled(true);
-                System.out.println("Changed value " + item.getTitle() + ", want to " + titles[i]);
-            }
-        }
-
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -119,30 +99,94 @@ public class NavigationMenu extends AppCompatActivity
 
 
         if (id == R.id.nav_home) {
+            switch (GameController.saver.estadoActual){
+                case "Hint":
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.content_frame,
+                                    new HintFragment())
+                            .commit();
+                    break;
+                case "Info":
+                    GameController.saver.estacionActual = GameController.saver.ruta[GameController.saver.pos];
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.content_frame,
+                                    new InfoFragment())
+                            .commit();
+                    break;
+                case "Finish":
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.content_frame,
+                                    new FinishFragment())
+                            .commit();
+                    break;
+            }
+
+        } else if (id == R.id.nav_estacion1) {
+            GameController.saver.estacionActual = GameController.saver.ruta[0];
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame,
                             new InfoFragment())
                     .commit();
-        } else if (id == R.id.nav_estacion1) {
-
         } else if (id == R.id.nav_estacion2){
-
+            GameController.saver.estacionActual = GameController.saver.ruta[1];
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame,
+                            new InfoFragment())
+                    .commit();
         } else if (id == R.id.nav_estacion3){
-
+            GameController.saver.estacionActual = GameController.saver.ruta[2];
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame,
+                            new InfoFragment())
+                    .commit();
         } else if (id == R.id.nav_estacion4){
-
+            GameController.saver.estacionActual = GameController.saver.ruta[3];
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame,
+                            new InfoFragment())
+                    .commit();
         } else if (id == R.id.nav_estacion5){
-
+            GameController.saver.estacionActual = GameController.saver.ruta[4];
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame,
+                            new InfoFragment())
+                    .commit();
         } else if (id == R.id.nav_estacion6){
-
+            GameController.saver.estacionActual = GameController.saver.ruta[5];
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame,
+                            new InfoFragment())
+                    .commit();
         } else if (id == R.id.nav_estacion7){
-
+            GameController.saver.estacionActual = GameController.saver.ruta[6];
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame,
+                            new InfoFragment())
+                    .commit();
         } else if (id == R.id.nav_estacion8){
-
+            GameController.saver.estacionActual = GameController.saver.ruta[7];
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame,
+                            new InfoFragment())
+                    .commit();
         } else if (id == R.id.nav_estacion9){
-
+            GameController.saver.estacionActual = GameController.saver.ruta[8];
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame,
+                            new InfoFragment())
+                    .commit();
         } else if (id == R.id.nav_estacion10){
-
+            GameController.saver.estacionActual = GameController.saver.ruta[9];
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame,
+                            new InfoFragment())
+                    .commit();
+        } else if (id == R.id.nav_estacion11){
+            GameController.saver.estacionActual = GameController.saver.ruta[10];
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame,
+                            new InfoFragment())
+                    .commit();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -150,24 +194,20 @@ public class NavigationMenu extends AppCompatActivity
         return true;
     }
 
-    public static void update(String[] titles){
-        NavigationMenu.titles = titles;
-        NavigationMenu.menu.update();
-    }
 
-    public MenuItem getMenuItemByStationId(int id){
+    public MenuItem getMenuItemByStationId(int id, Menu menu){
         switch (id){
-            case 0: return internalMenu.findItem(R.id.nav_estacion1);
-            case 1: return internalMenu.findItem(R.id.nav_estacion2);
-            case 2: return internalMenu.findItem(R.id.nav_estacion3);
-            case 3: return internalMenu.findItem(R.id.nav_estacion4);
-            case 4: return internalMenu.findItem(R.id.nav_estacion5);
-            case 5: return internalMenu.findItem(R.id.nav_estacion6);
-            case 6: return internalMenu.findItem(R.id.nav_estacion7);
-            case 7: return internalMenu.findItem(R.id.nav_estacion8);
-            case 8: return internalMenu.findItem(R.id.nav_estacion9);
-            case 9: return internalMenu.findItem(R.id.nav_estacion10);
-            case 10: return internalMenu.findItem(R.id.nav_estacion11);
+            case 0: return menu.findItem(R.id.nav_estacion1);
+            case 1: return menu.findItem(R.id.nav_estacion2);
+            case 2: return menu.findItem(R.id.nav_estacion3);
+            case 3: return menu.findItem(R.id.nav_estacion4);
+            case 4: return menu.findItem(R.id.nav_estacion5);
+            case 5: return menu.findItem(R.id.nav_estacion6);
+            case 6: return menu.findItem(R.id.nav_estacion7);
+            case 7: return menu.findItem(R.id.nav_estacion8);
+            case 8: return menu.findItem(R.id.nav_estacion9);
+            case 9: return menu.findItem(R.id.nav_estacion10);
+            case 10: return menu.findItem(R.id.nav_estacion11);
             default : return null;
         }
     }

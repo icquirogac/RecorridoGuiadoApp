@@ -15,14 +15,19 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java" line="99" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java" line="100" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6851f5fa-cd6b-471e-996d-e19ddc1fa740" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/HintFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/HintFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/FinishFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/FinishFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/InfoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/InfoFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/NavigationMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/NavigationMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/finish.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/finish.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/menu/activity_navigation_menu_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/menu/activity_navigation_menu_drawer.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,114 +44,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/FinishFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="33" column="62" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/NavigationMenu.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="69" column="41" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+            <state relative-caret-position="406">
+              <caret line="283" column="26" lean-forward="true" selection-start-line="283" selection-start-column="26" selection-end-line="283" selection-end-column="26" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1759#1790#0" expanded="true" />
-                <element signature="e#1792#1824#0" expanded="true" />
-                <element signature="e#3804#3847#0" expanded="true" />
+                <marker date="1566153816186" expanded="false" signature="140:1371" ph="..." />
+                <marker date="1566153816186" expanded="false" signature="1376:2587" ph="..." />
+                <marker date="1566153816186" expanded="false" signature="2592:3709" ph="..." />
+                <marker date="1566153816186" expanded="false" signature="3714:4613" ph="..." />
+                <marker date="1566153816186" expanded="false" signature="4618:5451" ph="..." />
+                <marker date="1566153816186" expanded="false" signature="5456:6410" ph="..." />
+                <marker date="1566153816186" expanded="false" signature="6415:7548" ph="..." />
+                <marker date="1566153816186" expanded="false" signature="7553:8922" ph="..." />
+                <marker date="1566153816186" expanded="false" signature="8927:9984" ph="..." />
+                <marker date="1566153816186" expanded="true" signature="9989:10833" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/menu/activity_navigation_menu_drawer.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/finish.xml">
           <provider editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/InfoFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="42" column="24" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1727#1735#0" expanded="true" />
-                <element signature="e#1716#1724#0" expanded="true" />
-                <element signature="e#2191#3421#0" expanded="true" />
-                <element signature="e#2933#2941#0" expanded="true" />
-                <element signature="e#3005#3013#0" expanded="true" />
-                <element signature="e#3420#3421#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/HintFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Estacion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Saver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="114" column="42" selection-start-line="114" selection-start-column="27" selection-end-line="114" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/content_navigation_menu.xml">
           <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -181,31 +115,32 @@
         <option value="$PROJECT_DIR$/src/main/res/layout/app_bar_navigation_menu.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/nav_header_navigation_menu.xml" />
         <option value="$PROJECT_DIR$/src/main/res/menu/navigation_menu.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/menu/activity_navigation_menu_drawer.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/finisish.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/FinishFragment.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/content_navigation_menu.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/gameController.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/hint.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Saver.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Estacion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/infoactivity.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/info.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/InfoFragment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/HintFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java" />
+        <option value="$PROJECT_DIR$/src/main/res/menu/activity_navigation_menu_drawer.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/NavigationMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/InfoFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/finish.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/FinishFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Constants.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="979" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -215,19 +150,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="RecorridoGuiado" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="Nexus_5X_API_28_x86" />
+    <property name="device.picker.selection" value="KPSDU18831015131" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/res/drawable-v24" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Ingesoft/Repo/sei2019i_2F/code/app/src/main/java/com/example/ahorcado1/Presentation/roundActivity.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PrimiPreguntas/app/src/main/java/com/example/primipreguntas/Ask.java" />
     <property name="settings.editor.selected.configurable" value="instant.run" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/res/layout/info.xml" />
   </component>
@@ -343,25 +288,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Structure" order="0" side_tool="true" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.3295302" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
       <window_info id="Build Variants" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Resources Explorer" order="6" weight="0.3295302" />
-      <window_info content_ui="combo" id="Project" order="7" weight="0.22550336" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.46577182" />
       <window_info id="Captures" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="TODO" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="4" weight="0.23796034" />
+      <window_info anchor="bottom" id="Build" order="4" weight="0.23512748" />
       <window_info anchor="bottom" id="Android Profiler" order="5" weight="0.3286119" />
       <window_info anchor="bottom" id="Logcat" order="6" weight="0.5991501" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.33144477" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.33524355" />
       <window_info anchor="bottom" id="Debug" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.3286119" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
@@ -401,14 +345,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/prueba.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/res/menu/navigation_menu.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_prueba.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Pregunta.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -424,25 +360,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/app_bar_navigation_menu.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/nav_header_navigation_menu.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/finish.xml">
       <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../build.gradle">
       <provider selected="true" editor-type-id="text-editor" />
@@ -453,28 +377,18 @@
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/FinishFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../Ingesoft/Repo/sei2019i_2F/code/app/src/main/java/com/example/ahorcado1/BusinessLogic/controllers/gameController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1061" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/hint.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../../Ingesoft/Repo/sei2019i_2F/code/app/src/main/java/com/example/ahorcado1/Presentation/roundActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -489,14 +403,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/res/drawable/ic_done_all_black_24dp.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_navigation_menu.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/drawable-v24/biblioteca.JPG">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -504,7 +410,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
@@ -513,14 +418,15 @@
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/infoactivity.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/view/LayoutInflater.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -536,52 +442,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="267" selection-start-line="267" selection-end-line="267" />
-          <folding>
-            <marker date="1566093102465" expanded="false" signature="140:1371" ph="..." />
-            <marker date="1566093102465" expanded="false" signature="1376:2587" ph="..." />
-            <marker date="1566093102465" expanded="false" signature="2592:3709" ph="..." />
-            <marker date="1566093102465" expanded="false" signature="3714:4613" ph="..." />
-            <marker date="1566093102465" expanded="false" signature="4618:5451" ph="..." />
-            <marker date="1566093102465" expanded="false" signature="5456:6410" ph="..." />
-            <marker date="1566093102465" expanded="false" signature="6415:7548" ph="..." />
-            <marker date="1566093102465" expanded="false" signature="7553:8922" ph="..." />
-            <marker date="1566093102465" expanded="false" signature="8927:9984" ph="..." />
-            <marker date="1566093102465" expanded="false" signature="9989:10833" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/info.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="883">
           <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/content_navigation_menu.xml">
       <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-        </state>
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/HintFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="114" column="42" selection-start-line="114" selection-start-column="27" selection-end-line="114" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Saver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        <state relative-caret-position="221">
+          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -592,63 +467,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/HintFragment.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Saver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/InfoFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1727#1735#0" expanded="true" />
-            <element signature="e#1716#1724#0" expanded="true" />
-            <element signature="e#2191#3421#0" expanded="true" />
-            <element signature="e#2933#2941#0" expanded="true" />
-            <element signature="e#3005#3013#0" expanded="true" />
-            <element signature="e#3420#3421#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/menu/activity_navigation_menu_drawer.xml">
       <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/NavigationMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/content_navigation_menu.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/menu/navigation_menu.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="69" column="41" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+        <state relative-caret-position="141">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../PrimiPreguntas/app/src/main/java/com/example/primipreguntas/Ask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="64" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../PrimiPreguntas/app/src/main/res/layout/activity_ask.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/InfoFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="79" column="89" selection-start-line="79" selection-start-column="89" selection-end-line="79" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1759#1790#0" expanded="true" />
-            <element signature="e#1792#1824#0" expanded="true" />
-            <element signature="e#3804#3847#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/app_bar_navigation_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_navigation_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/menu/activity_navigation_menu_drawer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="e#1070#1091#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/NavigationMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="109" column="110" selection-start-line="109" selection-start-column="110" selection-end-line="109" selection-end-column="110" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/finish.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/FinishFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="33" column="62" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="283" column="26" lean-forward="true" selection-start-line="283" selection-start-column="26" selection-end-line="283" selection-end-column="26" />
+          <folding>
+            <marker date="1566153816186" expanded="false" signature="140:1371" ph="..." />
+            <marker date="1566153816186" expanded="false" signature="1376:2587" ph="..." />
+            <marker date="1566153816186" expanded="false" signature="2592:3709" ph="..." />
+            <marker date="1566153816186" expanded="false" signature="3714:4613" ph="..." />
+            <marker date="1566153816186" expanded="false" signature="4618:5451" ph="..." />
+            <marker date="1566153816186" expanded="false" signature="5456:6410" ph="..." />
+            <marker date="1566153816186" expanded="false" signature="6415:7548" ph="..." />
+            <marker date="1566153816186" expanded="false" signature="7553:8922" ph="..." />
+            <marker date="1566153816186" expanded="false" signature="8927:9984" ph="..." />
+            <marker date="1566153816186" expanded="true" signature="9989:10833" ph="..." />
           </folding>
         </state>
       </provider>

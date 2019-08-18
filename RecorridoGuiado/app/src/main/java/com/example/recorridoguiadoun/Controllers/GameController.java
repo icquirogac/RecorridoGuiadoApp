@@ -2,6 +2,7 @@ package com.example.recorridoguiadoun.Controllers;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.util.Log;
+import android.view.Menu;
 
 import com.example.recorridoguiadoun.Activity.NavigationMenu;
 import com.example.recorridoguiadoun.Models.Constants;
@@ -103,8 +104,6 @@ public class GameController {
             saver.ruta[saver.pos].isBlocked = false;
             saver.estadoActual = "Info";
             saver.estacionActual = saver.ruta[saver.pos];
-            System.out.println("Updating after pass");
-            updateMenuItems();
 
             return true;
         }
@@ -118,8 +117,6 @@ public class GameController {
         for(int i = 0; i < exit.length; i++){
             if(!saver.ruta[i].isBlocked) exit[i] = saver.ruta[i].nombre;
         }
-
-        NavigationMenu.update(exit);
 
         return exit;
     }
