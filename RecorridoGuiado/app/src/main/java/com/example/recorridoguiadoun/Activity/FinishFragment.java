@@ -36,15 +36,21 @@ public class FinishFragment extends Fragment {
         textTiempo = myView.findViewById(R.id.textTime);
         textPenalizacion = myView.findViewById(R.id.textPenalizaciones);
         textTotalTime = myView.findViewById(R.id.textTotalTime);
-        Estacion estacion;
         textFinish.setMovementMethod(new ScrollingMovementMethod());
 
-        String stamps = "";
-        for (int i = 0 ; i < GameController.saver.ruta.length ; i++){
-            estacion = GameController.saver.ruta[i];
-            Date data = new Date (estacion.stamp.getTime()-GameController.saver.start.getTime());
-            System.out.println(">>>>Hora: " + dateFormat.format(data) + ", T: " + (estacion.stamp.getTime()-GameController.saver.start.getTime()));
-            stamps += String.format("%-25s%s\n", estacion.nombre, dateFormat.format(data));
+        String stamps = "", tmp;
+        long h, m, s, diff;
+        for (Estacion estacion: GameController.saver.ruta){
+            diff = estacion.stamp.getTime()-GameController.saver.start.getTime();
+            diff /= 1000;
+            s = diff % 60;
+            diff /= 60;
+            m = diff % 60;
+            h = diff / 60;
+            tmp = String.format("%-25s%02d:02d:%02d\n", estacion.nombre, h, m, s);
+            System.out.println(">>>>Hora: " + tmp);
+
+            stamps += tmp;
         }
         textFinish.setText(stamps);
         Date time = new Date(GameController.saver.finish.getTime()-GameController.saver.start.getTime());
