@@ -36,7 +36,7 @@ public class HintFragment extends Fragment {
         verifyBut = (Button) myView.findViewById(R.id.verifyButton);
         pass = (EditText) myView.findViewById(R.id.passText);
         preferences = this.getActivity().getPreferences(Context.MODE_PRIVATE);
-
+        GameController.saveGame(preferences);
         final Context context = myView.getContext();
 
         verifyBut.setOnClickListener(new View.OnClickListener() {

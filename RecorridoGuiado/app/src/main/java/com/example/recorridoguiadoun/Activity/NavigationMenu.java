@@ -67,7 +67,7 @@ public class NavigationMenu extends AppCompatActivity
                         .commit();
                 break;
         }
-
+        GameController.updateMenuItems();
         menu = this;
     }
 
@@ -82,7 +82,6 @@ public class NavigationMenu extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        // getMenuInflater().inflate(R.menu.navigation_menu, menu);
 
         MenuItem item;
 
@@ -91,12 +90,14 @@ public class NavigationMenu extends AppCompatActivity
         if(titles == null) return true;
 
         for(int i = 0; i < titles.length; i++){
+            System.out.println("Menu: ->" + getMenuItemByStationId(i, menu));
             if(titles[i] != null && (item = getMenuItemByStationId(i, menu)) != null){
                 item.setTitle(titles[i]);
                 item.setEnabled(true);
                 System.out.println("Changed value " + item.getTitle() + ", want to " + titles[i]);
             }
         }
+        getMenuInflater().inflate(R.menu.navigation_menu, menu);
 
         return true;
     }

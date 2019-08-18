@@ -30,7 +30,8 @@ public class GameController {
     public static void loadGame(SharedPreferences sharedPreferences){
         Gson gson = new Gson();
         String json = sharedPreferences.getString("Saver", "");
-        saver = gson.fromJson(json, Saver.class);
+        Saver tmp = gson.fromJson(json, Saver.class);
+        if(tmp!=null) saver = tmp;
     }
 
     public static String[] getPregunta(){
