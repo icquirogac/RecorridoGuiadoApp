@@ -47,7 +47,7 @@ public class FinishFragment extends Fragment {
             diff /= 60;
             m = diff % 60;
             h = diff / 60;
-            tmp = String.format("%-25s%02d:02d:%02d\n", estacion.nombre, h, m, s);
+            tmp = String.format("%-25s%02d:%02d:%02d\n", estacion.nombre, h, m, s);
             System.out.println(">>>>Hora: " + tmp);
 
             stamps += tmp;
