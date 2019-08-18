@@ -42,8 +42,9 @@ public class FinishFragment extends Fragment {
         String stamps = "";
         for (int i = 0 ; i < GameController.saver.ruta.length ; i++){
             estacion = GameController.saver.ruta[i];
-            Date data = new Date(estacion.stamp.getTime()-GameController.saver.start.getTime());
-            stamps += estacion.nombre + "\t\t\t" + dateFormat.format(data) + "\n";
+            Date data = new Date (estacion.stamp.getTime()-GameController.saver.start.getTime());
+            System.out.println(">>>>Hora: " + dateFormat.format(data) + ", T: " + (estacion.stamp.getTime()-GameController.saver.start.getTime()));
+            stamps += String.format("%-25s%s\n", estacion.nombre, dateFormat.format(data));
         }
         textFinish.setText(stamps);
         Date time = new Date(GameController.saver.finish.getTime()-GameController.saver.start.getTime());
