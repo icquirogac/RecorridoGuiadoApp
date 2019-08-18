@@ -3,6 +3,7 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.util.Log;
 
+import com.example.recorridoguiadoun.Activity.NavigationMenu;
 import com.example.recorridoguiadoun.Models.Constants;
 import com.example.recorridoguiadoun.Models.Estacion;
 import com.example.recorridoguiadoun.Models.Saver;
@@ -50,7 +51,7 @@ public class GameController {
             case "bienestar":   saver = new Saver(Constants.r2);    break;
             case "universidadnacional": saver = new Saver(Constants.r3);    break;
             case "sedebogota":  saver = new Saver(Constants.r4);    break;
-                default: return false;
+            default: return false;
         }
         saver.penalizacion = 0;
         saver.start = Calendar.getInstance().getTime();
@@ -78,6 +79,9 @@ public class GameController {
         Estacion est = saver.ruta[saver.pos];
         if (est.pregunta[nPregunta].resCorrecta==intento){
             est.preguntaIsBlocked=true;
+
+            //updateMenuItems();
+
             if (saver.pos==saver.ruta.length-1) {
                 won();
             }else{
@@ -98,9 +102,24 @@ public class GameController {
             saver.ruta[saver.pos].isBlocked = false;
             saver.estadoActual = "Info";
             saver.estacionActual = saver.ruta[saver.pos];
+            System.out.println("Updating after pass");
+            updateMenuItems();
+
             return true;
         }
         saver.penalizacion++;
         return false;
+    }
+
+    public static String[] updateMenuItems(){
+        String[] exit = new String[saver.ruta.length];
+
+        for(int i = 0; i < exit.length; i++){
+            if(!saver.ruta[i].isBlocked) exit[i] = saver.ruta[i].nombre;
+        }
+
+        NavigationMenu.update(exit);
+
+        return exit;
     }
 }

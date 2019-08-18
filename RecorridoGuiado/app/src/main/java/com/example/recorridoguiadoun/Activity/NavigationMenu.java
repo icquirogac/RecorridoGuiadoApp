@@ -1,5 +1,6 @@
 package com.example.recorridoguiadoun.Activity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -19,8 +20,13 @@ import com.example.recorridoguiadoun.Controllers.GameController;
 import com.example.recorridoguiadoun.Models.Saver;
 import com.example.recorridoguiadoun.R;
 
+import java.util.Arrays;
+
 public class NavigationMenu extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private static NavigationMenu menu;
+    private static String[] titles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +63,8 @@ public class NavigationMenu extends AppCompatActivity
                         .commit();
                 break;
         }
+
+        menu = this;
     }
 
     @Override
@@ -70,7 +78,21 @@ public class NavigationMenu extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.navigation_menu, menu);
+        // getMenuInflater().inflate(R.menu.navigation_menu, menu);
+
+        MenuItem item;
+
+        System.out.println("->->->" + Arrays.toString(titles));
+
+        if(titles == null) return true;
+
+        for(int i = 0; i < titles.length; i++){
+            if(titles[i] != null && (item = getMenuItemByStationId(i, menu)) != null){
+                item.setTitle(titles[i]);
+                item.setEnabled(true);
+                System.out.println("Changed value " + item.getTitle() + ", want to " + titles[i]);
+            }
+        }
 
         return true;
     }
@@ -115,5 +137,28 @@ public class NavigationMenu extends AppCompatActivity
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public static void update(String[] titles){
+        NavigationMenu.titles = titles;
+        NavigationMenu.menu.invalidateOptionsMenu();
+
+    }
+
+    public static MenuItem getMenuItemByStationId(int id, Menu menu){
+        switch (id){
+            case 0: return menu.findItem(R.id.nav_estacion1);
+            case 1: return menu.findItem(R.id.nav_estacion2);
+            case 2: return menu.findItem(R.id.nav_estacion3);
+            case 3: return menu.findItem(R.id.nav_estacion4);
+            case 4: return menu.findItem(R.id.nav_estacion5);
+            case 5: return menu.findItem(R.id.nav_estacion6);
+            case 6: return menu.findItem(R.id.nav_estacion7);
+            case 7: return menu.findItem(R.id.nav_estacion8);
+            case 8: return menu.findItem(R.id.nav_estacion9);
+            case 9: return menu.findItem(R.id.nav_estacion10);
+            case 10: return menu.findItem(R.id.nav_estacion11);
+            default : return null;
+        }
     }
 }
