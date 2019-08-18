@@ -1,5 +1,6 @@
 package com.example.recorridoguiadoun.Activity;
 
+import android.content.SharedPreferences;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -24,6 +25,7 @@ import java.util.Arrays;
 
 public class NavigationMenu extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    public SharedPreferences mPrefs;
 
     private static NavigationMenu menu;
     private static String[] titles;
@@ -33,6 +35,8 @@ public class NavigationMenu extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_menu);
+        mPrefs = getPreferences(MODE_PRIVATE);
+        GameController.loadGame(mPrefs);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -102,7 +106,6 @@ public class NavigationMenu extends AppCompatActivity
             }
         }
     }
-
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override

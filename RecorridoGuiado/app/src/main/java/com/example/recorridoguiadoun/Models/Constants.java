@@ -1,6 +1,8 @@
 package com.example.recorridoguiadoun.Models;
 
 
+import com.example.recorridoguiadoun.R;
+
 public final class Constants {
     //Preguntas
     public static Pregunta preguntasCADE[] = {
@@ -178,28 +180,28 @@ public final class Constants {
 
     public static Estacion[] estaciones = {
             new Estacion(
-                    "",
+                    R.drawable.cade,
                     "CADE",
                     "Dos mil trescientos millones de pesos de excedentes de proyectos de extensión fueron invertidos por la facultad para construir esta imponente obra, que destaca la estructura en madera teka y metálica.\nSu construcción finalizó en el año 2009 y comenzó a funcionar en el año 2010. En este espacio está ubicada la Secretaría Académica, las coordinaciones curriculares, la unidad administrativa, la sección de publicaciones y los representantes estudiantiles.",
                     "Es un edificio con fachada en láminas de madera al lado del edificio de hidráulica.",
                     preguntasCADE,
                     2010),
             new Estacion(
-                    "",
+                    R.drawable.salmona,
                     "225 - Rogelio Salmona",
                     "En el año de 1995, con la colaboración de Rogelio Salmona PhD honoris causa, uno de los arquitectos más famosos de Colombia, se iniciaron los primeros trazados de esta magnífica obra arquitectónica, en diciembre del 2000 se inauguró, dotada con la última tecnología de un edificio inteligente, que hoy ponemos a su disposición. Se trata del Edificio de Posgrados de la Facultad de Ciencias Humanas, un verdadero centro cultural y de convenciones de la Universidad Nacional y de la Facultad de Ciencias Humanas",
                     "Edificio con forma circular",
                     preguntasRogelio,
                     2000),
             new Estacion(
-                    "",
+                    R.drawable.e214,
                     "e214 - Antonio Nariño",
                     "Construido entre 1940-1941; Edificio Residencial de carácter longitudinal, alto y estrecho que hace parte de la significativa arquitectura racional y blanca de la Universidad.Complemento estilístico y urbano del  edificio Francisco de Paula Santander que lo enfrenta y lo complementa.\nÁrea: 2.853 m2\nArq.: Juan Bonilla Plata.",
                     "Al sur del campus universitario, entre dos próceres de nuestra independencia  en una banca encontrarás la palabra  “Digna Rabia ”cerca  a esa banca la siguiente pista encontrarás y al hogar de snoopy deberás entrar.",
                     preguntas214,
                     1952),
             new Estacion(
-                    "",
+                    R.drawable.polideportivo,
                     "103 - Polideportivo",
                     "Uso Inicial: Centro Estudiantil \n" +
                             "Uso Actual: Centro Polideportivo (Comedor central, Clases de la facultad de artes, registro, secretaria de matrícula, oficinas de bienestar de sede, zona de cardio, otros)\n" +
@@ -211,7 +213,7 @@ public final class Constants {
                     preguntasPoli,
                     1972),
             new Estacion(
-                    "",
+                    R.drawable.genetica,
                     "426 - Instituto de Genética",
                     "El Instituto de Genética de la Universidad Nacional de Colombia – IGUN, se creó a partir del Acuerdo 081 del 20 de Octubre de 1993, fundado por el profesor Emilio José Yunis Turbay,  desde entonces ha desarrollado actividades de investigación, formación y extensión, que le permiten hacer presencia en diferentes áreas de la genética a nivel vegetal, animal y humano.\n" +
                             "Tiene como objetos de estudio la diversidad genética representada en la biodiversidad de la nación. Se ofrecen servicios especializados en las áreas clínicas, forenses, de biodiversidad y asesorías en el campo genético. En términos de formación se apoyan programas académicos de pregrado y posgrado de las Facultades adscritas. (Medicina, Medicina Veterinaria y Zootecnia, Odontología, Ciencias y Ciencias Agrarias).",
@@ -219,7 +221,7 @@ public final class Constants {
                     preguntasGenetica,
                     1993),
             new Estacion(
-                    "",
+                    R.drawable.yutake,
                     "404 - Yu Takeuchi",
                     "Lleva su nombre en honor al físico y matemático japonés Yu Takeuchi reconocido docente e impulsor de la matemática del siglo XX en Colombia.\n" +
                             "\n" +
@@ -228,7 +230,7 @@ public final class Constants {
                     preguntasYutake,
                     1990),
             new Estacion(
-                    "",
+                    R.drawable.patios,
                     "411 - Laboratorios de Ingeniería",
                     "Los laboratorios de la Facultad de Ingeniería son espacios de experimentación a través de los cuales se desarrollan las actividades misionales (docencia, investigación y extensión) de la Universidad. Los laboratorios permiten el ejercicio de la dimensión práctica del proceso formativo de los profesionales e investigadores de las distintas especialidades de la ingeniería.\n" +
                             "La Coordinación de Laboratorios de la Facultad, con el apoyo de diversas áreas de la Universidad, ha impulsado estrategias en pro de la mejora del estado actual de los laboratorios. Estas iniciativas parten de un proceso de diagnóstico cuyos ejes centrales han sido la seguridad industrial, la planificación y ejecución del mantenimiento, la infraestructura y una gestión más adecuada de servicios ofertados.",
@@ -236,28 +238,28 @@ public final class Constants {
                     preguntasLab,
                     1980),
             new Estacion(
-                    "",
+                    R.drawable.quimica,
                     "451 - Edificio de Química",
                     "Se ubica en la región central del campus fue construido en el periodo denominado “Materiales a la vista” entre los años 1943-1952, alberga al departamento de Química que ya venía funcionando en otro lugar desde 1937, como una dependencia de la escuela de Farmacia. El edificio cuenta con un área cercana a 11065",
                     "Se ubica en la zona central del campus, sus fachadas dejan ver los ladrillos que forman sus muros y grandes ventanales que permiten el paso de la luz a salones y laboratorios. Entrando por su puerta principal verás hombres y mujeres cubiertos de blanco hasta las rodillas que llevan en su mente números y letras (quizás fórmulas)… A su lado hay un parqueadero para bicicletas.",
                     preguntasQuimica,
                     1943),
             new Estacion(
-                    "",
+                    R.drawable.hemeroteca,
                     "571 - Hemeroteca Nacional Universitaria Carlos Lleras Restrepo",
                     "El edificio se comenzó en 1992 y abrió sus puertas en 1994 con diseño de los arquitectos Guillermo Bermúdez Umaña, Reinaldo Valencia Rey y Sergio González González. En 2003 las colecciones y la administración pasaron a la Universidad, que en 2005 trasladó sus colecciones hemerográficas a su Biblioteca Central. Su misión consiste en apoyar los programas académicos y de investigación de las instituciones de educación superior, de los centros de investigación, lo mismo que de las organizaciones públicas y privadas de Colombia.\n",
                     "Se halla en el extremo suroccidental de la Ciudad Universitaria, es el edificio más aislado del campus y tiene el nombre de un ex presidente de Colombia.",
                     preguntasHemero,
                     1994),
             new Estacion(
-                    "",
+                    R.drawable.biblioteca,
                     "102 - Biblioteca Central Gabriel García Márquez",
                     "En 1964 el consejo superior universitario se dispuso a la creación de la biblioteca, pero fue hasta 1968 que se iniciaron los trabajos de construcción. Eduardo Santa fue el encargado y estuvo al frente de dicho proyecto. En 1971 se inició la integración de las bibliotecas en el nuevo edificio y el 1 de marzo de ese año comenzó a funcionar las actuales instalaciones. Tuvo una remodelación entre los años 2008-2009\n",
                     "Se ubica en el Centro del campus universitario, es uno de los edificios importantes y tiene el nombre del escritor más representativo del país.",
                     preguntasBiblioteca,
                     1971),
             new Estacion(
-                    "",
+                    R.drawable.computadores,
                     "sala de informatioca",
                     "falta",
                     "falta",
