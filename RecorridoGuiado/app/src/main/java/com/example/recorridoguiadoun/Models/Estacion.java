@@ -7,7 +7,7 @@ public class Estacion {
 
     public int srcImage;         //Direccion de la imagen de la estacion
     public String nombre;           //Nombre del edificio 401 - hdsa
-    public String nombreCorto;
+    public String nombreCorto;      // Nombre del edificio, longitud <= 25 caracteres
     public String info;             //Historia
     public String pista;            //Como llegar a la estacion
     public Pregunta[] pregunta;     //5 Preguntas del lugar
