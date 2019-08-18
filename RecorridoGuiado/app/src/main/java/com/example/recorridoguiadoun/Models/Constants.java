@@ -50,7 +50,7 @@ public final class Constants {
             new Pregunta("¿Cual es el edificio gemelo del Antonio Nariño?",
                     new String[]{"Francisco de Paula Santander", "Julio Garavito Armero","Museo de Arquitectura Leopoldo Rother","Manuel Ancizar"},
                     0),
-            new Pregunta("¿Cuantas salidas de emergencia tiene el 214?",
+            new Pregunta("¿Cuantas salidas de emergencia tiene el e214?",
                     new String[]{"4", "3","2","9*3/4"},
                     2)
     };
@@ -193,7 +193,7 @@ public final class Constants {
                     2000),
             new Estacion(
                     "",
-                    "214 - Antonio Nariño",
+                    "e214 - Antonio Nariño",
                     "Construido entre 1940-1941; Edificio Residencial de carácter longitudinal, alto y estrecho que hace parte de la significativa arquitectura racional y blanca de la Universidad.Complemento estilístico y urbano del  edificio Francisco de Paula Santander que lo enfrenta y lo complementa.\nÁrea: 2.853 m2\nArq.: Juan Bonilla Plata.",
                     "Al sur del campus universitario, entre dos próceres de nuestra independencia  en una banca encontrarás la palabra  “Digna Rabia ”cerca  a esa banca la siguiente pista encontrarás y al hogar de snoopy deberás entrar.",
                     preguntas214,
