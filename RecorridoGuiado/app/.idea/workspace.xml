@@ -15,19 +15,13 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java" line="94" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java" line="98" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6851f5fa-cd6b-471e-996d-e19ddc1fa740" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/HintFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/HintFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/InfoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/InfoFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/NavigationMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/NavigationMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Estacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Estacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable-v24/e214.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/menu/activity_navigation_menu_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/menu/activity_navigation_menu_drawer.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,19 +38,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/NavigationMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-967">
-              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+            <state relative-caret-position="-85">
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1759#1790#0" expanded="true" />
+                <element signature="e#1792#1824#0" expanded="true" />
+                <element signature="e#3804#3847#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="89">
@@ -141,8 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="24" column="36" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="36" />
+            <state relative-caret-position="325">
+              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -191,9 +188,9 @@
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/infoactivity.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/info.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/NavigationMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/HintFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/InfoFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/NavigationMenu.java" />
       </list>
     </option>
   </component>
@@ -402,13 +399,13 @@
       <window_info id="Build Variants" order="4" side_tool="true" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Resources Explorer" order="6" weight="0.3295302" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.22550336" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.22550336" />
       <window_info id="Captures" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="TODO" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Build" order="4" visible="true" weight="0.23796034" />
+      <window_info anchor="bottom" id="Build" order="4" visible="true" weight="0.23796034" />
       <window_info anchor="bottom" id="Android Profiler" order="5" weight="0.3286119" />
       <window_info anchor="bottom" id="Logcat" order="6" weight="0.30311614" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.4164306" />
@@ -662,18 +659,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/NavigationMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-967">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="325">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -699,6 +686,19 @@
           <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/NavigationMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1759#1790#0" expanded="true" />
+            <element signature="e#1792#1824#0" expanded="true" />
+            <element signature="e#3804#3847#0" expanded="true" />
           </folding>
         </state>
       </provider>
