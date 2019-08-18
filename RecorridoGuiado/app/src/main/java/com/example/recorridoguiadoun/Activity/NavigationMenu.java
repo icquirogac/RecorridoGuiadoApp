@@ -29,6 +29,7 @@ public class NavigationMenu extends AppCompatActivity
 
     private static NavigationMenu menu;
     private static String[] titles;
+    private Menu internalMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,23 +84,30 @@ public class NavigationMenu extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
 
+        getMenuInflater().inflate(R.menu.navigation_menu, menu);
+
+        this.internalMenu = menu;
+
+        return true;
+    }
+
+
+    private void update(){
         MenuItem item;
 
         System.out.println("->->->" + Arrays.toString(titles));
 
-        if(titles == null) return true;
+        if(titles == null) return;
 
         for(int i = 0; i < titles.length; i++){
-            System.out.println("Menu: ->" + getMenuItemByStationId(i, menu));
-            if(titles[i] != null && (item = getMenuItemByStationId(i, menu)) != null){
+
+            if(titles[i] != null && (item = getMenuItemByStationId(i)) != null){
                 item.setTitle(titles[i]);
                 item.setEnabled(true);
                 System.out.println("Changed value " + item.getTitle() + ", want to " + titles[i]);
             }
         }
-        getMenuInflater().inflate(R.menu.navigation_menu, menu);
 
-        return true;
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -144,23 +152,22 @@ public class NavigationMenu extends AppCompatActivity
 
     public static void update(String[] titles){
         NavigationMenu.titles = titles;
-        NavigationMenu.menu.invalidateOptionsMenu();
-
+        NavigationMenu.menu.update();
     }
 
-    public static MenuItem getMenuItemByStationId(int id, Menu menu){
+    public MenuItem getMenuItemByStationId(int id){
         switch (id){
-            case 0: return menu.findItem(R.id.nav_estacion1);
-            case 1: return menu.findItem(R.id.nav_estacion2);
-            case 2: return menu.findItem(R.id.nav_estacion3);
-            case 3: return menu.findItem(R.id.nav_estacion4);
-            case 4: return menu.findItem(R.id.nav_estacion5);
-            case 5: return menu.findItem(R.id.nav_estacion6);
-            case 6: return menu.findItem(R.id.nav_estacion7);
-            case 7: return menu.findItem(R.id.nav_estacion8);
-            case 8: return menu.findItem(R.id.nav_estacion9);
-            case 9: return menu.findItem(R.id.nav_estacion10);
-            case 10: return menu.findItem(R.id.nav_estacion11);
+            case 0: return internalMenu.findItem(R.id.nav_estacion1);
+            case 1: return internalMenu.findItem(R.id.nav_estacion2);
+            case 2: return internalMenu.findItem(R.id.nav_estacion3);
+            case 3: return internalMenu.findItem(R.id.nav_estacion4);
+            case 4: return internalMenu.findItem(R.id.nav_estacion5);
+            case 5: return internalMenu.findItem(R.id.nav_estacion6);
+            case 6: return internalMenu.findItem(R.id.nav_estacion7);
+            case 7: return internalMenu.findItem(R.id.nav_estacion8);
+            case 8: return internalMenu.findItem(R.id.nav_estacion9);
+            case 9: return internalMenu.findItem(R.id.nav_estacion10);
+            case 10: return internalMenu.findItem(R.id.nav_estacion11);
             default : return null;
         }
     }
