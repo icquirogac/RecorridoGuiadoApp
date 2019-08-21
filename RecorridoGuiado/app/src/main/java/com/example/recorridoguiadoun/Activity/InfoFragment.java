@@ -3,6 +3,7 @@ package com.example.recorridoguiadoun.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -45,8 +46,8 @@ public class InfoFragment extends Fragment {
         respuestas = (ListView) myView.findViewById(R.id.listRespuestas);
 
         Estacion estacion = GameController.saver.estacionActual;
-
-        imagen.setImageResource(estacion.srcImage);
+        Resources resources = getResources();
+        imagen.setImageDrawable(resources.getDrawable(estacion.srcImage));
         titulo.setText(estacion.nombre);
         info.setText(estacion.info);
 
