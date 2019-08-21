@@ -47,9 +47,8 @@ public class InfoFragment extends Fragment {
         respuestas = (ListView) myView.findViewById(R.id.listRespuestas);
 
         Estacion estacion = GameController.saver.estacionActual;
-        Resources resources = getResources();
         try {
-            imagen.setImageDrawable(resources.getDrawable(GameController.getImgSrc(estacion.nombre)));
+            imagen.setImageResource(GameController.getImgSrc(estacion.nombre));
         }catch (Exception x){
 
         }
