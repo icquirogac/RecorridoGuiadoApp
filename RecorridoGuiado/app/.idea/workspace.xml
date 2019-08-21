@@ -24,13 +24,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java" line="121" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6851f5fa-cd6b-471e-996d-e19ddc1fa740" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/InfoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/InfoFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Controllers/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Estacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Estacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/info.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6851f5fa-cd6b-471e-996d-e19ddc1fa740" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret line="250" column="23" lean-forward="true" selection-start-line="250" selection-start-column="23" selection-end-line="250" selection-end-column="23" />
+              <caret line="250" column="23" selection-start-line="250" selection-start-column="23" selection-end-line="250" selection-end-column="23" />
               <folding>
                 <marker date="1566348980520" expanded="false" signature="140:1381" ph="..." />
                 <marker date="1566348980520" expanded="false" signature="1386:2607" ph="..." />
@@ -147,7 +141,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/InfoFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="301">
-              <caret line="50" column="40" lean-forward="true" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+              <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -687,7 +681,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Models/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="250" column="23" lean-forward="true" selection-start-line="250" selection-start-column="23" selection-end-line="250" selection-end-column="23" />
+          <caret line="250" column="23" selection-start-line="250" selection-start-column="23" selection-end-line="250" selection-end-column="23" />
           <folding>
             <marker date="1566348980520" expanded="false" signature="140:1381" ph="..." />
             <marker date="1566348980520" expanded="false" signature="1386:2607" ph="..." />
@@ -747,7 +741,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/recorridoguiadoun/Activity/InfoFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
-          <caret line="50" column="40" lean-forward="true" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+          <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
