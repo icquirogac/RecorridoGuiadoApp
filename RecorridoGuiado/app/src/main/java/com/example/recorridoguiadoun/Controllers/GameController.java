@@ -6,6 +6,7 @@ import android.util.Log;
 import com.example.recorridoguiadoun.Models.Constants;
 import com.example.recorridoguiadoun.Models.Estacion;
 import com.example.recorridoguiadoun.Models.Saver;
+import com.example.recorridoguiadoun.R;
 import com.google.gson.Gson;
 
 import java.util.Calendar;
@@ -63,7 +64,33 @@ public class GameController {
         Estacion est = saver.ruta[saver.pos];
         return est.pista;
     }
-
+    public static int getImgSrc(String name){
+        switch (name){
+            case "CADE":
+                return R.drawable.cade;
+            case "225 - Rogelio Salmona":
+                return R.drawable.salmona;
+            case "214 - Antonio Nariño":
+                return R.drawable.e214;
+            case "103 - Polideportivo":
+                return R.drawable.polideportivo;
+            case "426 - Instituto de Genética":
+                return R.drawable.genetica;
+            case "404 - Yu Takeuchi":
+                return R.drawable.yutake;
+            case "411 - Laboratorios de Ingeniería":
+                return R.drawable.patios;
+            case "451 - Edificio de Química":
+                return R.drawable.quimica;
+            case "571 - Hemeroteca Nacional Universitaria Carlos Lleras Restrepo":
+                return R.drawable.hemeroteca;
+            case "102 - Biblioteca Central Gabriel García Márquez":
+                return R.drawable.biblioteca;
+            case "477 - Sala Central de Informática":
+                return R.drawable.computadores;
+        }
+        return -1;
+    }
     public static void won(){
         saver.won = true;
         saver.pos = -1;

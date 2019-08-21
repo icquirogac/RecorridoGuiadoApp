@@ -5,7 +5,6 @@ import java.util.Date;
 
 public class Estacion {
 
-    public int srcImage;         //Direccion de la imagen de la estacion
     public String nombre;           //Nombre del edificio 401 - hdsa
     public String nombreCorto;      // Nombre del edificio, longitud <= 25 caracteres
     public String info;             //Historia
@@ -16,8 +15,7 @@ public class Estacion {
     public int password;                //eL Año en el que el edifico se inauguro
     public boolean preguntaIsBlocked;
 
-    public Estacion(int image, String name, String shortName, String information, String hint, Pregunta[] preg, int pass){
-        this.srcImage = image;
+    public Estacion(String name, String shortName, String information, String hint, Pregunta[] preg, int pass){
         this.nombre = name;
         this.nombreCorto = shortName;
         this.info = information;

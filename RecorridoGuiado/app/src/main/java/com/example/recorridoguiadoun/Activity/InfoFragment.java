@@ -47,7 +47,7 @@ public class InfoFragment extends Fragment {
 
         Estacion estacion = GameController.saver.estacionActual;
         Resources resources = getResources();
-        imagen.setImageDrawable(resources.getDrawable(estacion.srcImage));
+        imagen.setImageDrawable(resources.getDrawable(GameController.getImgSrc(estacion.nombre)));
         titulo.setText(estacion.nombre);
         info.setText(estacion.info);
 

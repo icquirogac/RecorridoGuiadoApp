@@ -197,7 +197,6 @@ public final class Constants {
 
     public static Estacion[] estaciones = {
             new Estacion(
-                    R.drawable.cade,
                     "CADE",
                     "CADE",
                     "Dos mil trescientos millones de pesos de excedentes de proyectos de extensión fueron invertidos por la facultad para construir esta imponente obra, que destaca la estructura en madera teka y metálica.\nSu construcción finalizó en el año 2009 y comenzó a funcionar en el año 2010. En este espacio está ubicada la Secretaría Académica, las coordinaciones curriculares, la unidad administrativa, la sección de publicaciones y los representantes estudiantiles.",
@@ -205,7 +204,6 @@ public final class Constants {
                     preguntasCADE,
                     2010),
             new Estacion(
-                    R.drawable.salmona,
                     "225 - Rogelio Salmona",
                     "225 - Rogelio Salmona",
                     "En el año de 1995, con la colaboración de Rogelio Salmona PhD honoris causa, uno de los arquitectos más famosos de Colombia, se iniciaron los primeros trazados de esta magnífica obra arquitectónica, en diciembre del 2000 se inauguró, dotada con la última tecnología de un edificio inteligente, que hoy ponemos a su disposición. Se trata del Edificio de Posgrados de la Facultad de Ciencias Humanas, un verdadero centro cultural y de convenciones de la Universidad Nacional y de la Facultad de Ciencias Humanas",
@@ -213,7 +211,6 @@ public final class Constants {
                     preguntasRogelio,
                     2000),
             new Estacion(
-                    R.drawable.e214,
                     "214 - Antonio Nariño",
                     "214 - Antonio Nariño",
                     "Construido entre 1940-1941; Edificio Residencial de carácter longitudinal, alto y estrecho que hace parte de la significativa arquitectura racional y blanca de la Universidad.Complemento estilístico y urbano del  edificio Francisco de Paula Santander que lo enfrenta y lo complementa.\nÁrea: 2.853 m2\nArq.: Juan Bonilla Plata.",
@@ -221,7 +218,6 @@ public final class Constants {
                     preguntas214,
                     1952),
             new Estacion(
-                    R.drawable.polideportivo,
                     "103 - Polideportivo",
                     "103 - Polideportivo",
                     "Uso Inicial: Centro Estudiantil \n" +
@@ -234,7 +230,6 @@ public final class Constants {
                     preguntasPoli,
                     1972),
             new Estacion(
-                    R.drawable.genetica,
                     "426 - Instituto de Genética",
                     "426 - Instituto Genética",
                     "El Instituto de Genética de la Universidad Nacional de Colombia – IGUN, se creó a partir del Acuerdo 081 del 20 de Octubre de 1993, fundado por el profesor Emilio José Yunis Turbay,  desde entonces ha desarrollado actividades de investigación, formación y extensión, que le permiten hacer presencia en diferentes áreas de la genética a nivel vegetal, animal y humano.\n" +
@@ -243,7 +238,6 @@ public final class Constants {
                     preguntasGenetica,
                     1993),
             new Estacion(
-                    R.drawable.yutake,
                     "404 - Yu Takeuchi",
                     "404 - Yu Takeuchi",
                     "Lleva su nombre en honor al físico y matemático japonés Yu Takeuchi reconocido docente e impulsor de la matemática del siglo XX en Colombia.\n" +
@@ -253,7 +247,6 @@ public final class Constants {
                     preguntasYutake,
                     1990),
             new Estacion(
-                    R.drawable.patios,
                     "411 - Laboratorios de Ingeniería",
                     "411 - Lab. Ingeniería",
                     "Los laboratorios de la Facultad de Ingeniería son espacios de experimentación a través de los cuales se desarrollan las actividades misionales (docencia, investigación y extensión) de la Universidad. Los laboratorios permiten el ejercicio de la dimensión práctica del proceso formativo de los profesionales e investigadores de las distintas especialidades de la ingeniería.\n" +
@@ -262,7 +255,6 @@ public final class Constants {
                     preguntasLab,
                     1980),
             new Estacion(
-                    R.drawable.quimica,
                     "451 - Edificio de Química",
                     "451 - Edificio de Química",
                     "Se ubica en la región central del campus fue construido en el periodo denominado “Materiales a la vista” entre los años 1943-1952, alberga al departamento de Química que ya venía funcionando en otro lugar desde 1937, como una dependencia de la escuela de Farmacia. El edificio cuenta con un área cercana a 11065",
@@ -270,7 +262,6 @@ public final class Constants {
                     preguntasQuimica,
                     1943),
             new Estacion(
-                    R.drawable.hemeroteca,
                     "571 - Hemeroteca Nacional Universitaria Carlos Lleras Restrepo",
                     "571 - Hemeroteca Nacional",
                     "El edificio se comenzó en 1992 y abrió sus puertas en 1994 con diseño de los arquitectos Guillermo Bermúdez Umaña, Reinaldo Valencia Rey y Sergio González González. En 2003 las colecciones y la administración pasaron a la Universidad, que en 2005 trasladó sus colecciones hemerográficas a su Biblioteca Central. Su misión consiste en apoyar los programas académicos y de investigación de las instituciones de educación superior, de los centros de investigación, lo mismo que de las organizaciones públicas y privadas de Colombia.\n",
@@ -278,7 +269,6 @@ public final class Constants {
                     preguntasHemero,
                     1994),
             new Estacion(
-                    R.drawable.biblioteca,
                     "102 - Biblioteca Central Gabriel García Márquez",
                     "102 - Biblioteca Central",
                     "En 1964 el consejo superior universitario se dispuso a la creación de la biblioteca, pero fue hasta 1968 que se iniciaron los trabajos de construcción. Eduardo Santa fue el encargado y estuvo al frente de dicho proyecto. En 1971 se inició la integración de las bibliotecas en el nuevo edificio y el 1 de marzo de ese año comenzó a funcionar las actuales instalaciones. Tuvo una remodelación entre los años 2008-2009\n",
@@ -286,7 +276,6 @@ public final class Constants {
                     preguntasBiblioteca,
                     1971),
             new Estacion(
-                    R.drawable.computadores,
                     "477 - Sala Central de Informática",
                     "477 - Sala C. Informática",
                     "Este edificio se construyó en 1964 (Inaugurado en 1965) para recibir la carrera de Arquitectura, que tenía su sede en el actual edificio de Bellas Artes. \"Un bello edificio diseñado por alemanes en estilo Bauhaus.",
