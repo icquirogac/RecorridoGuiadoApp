@@ -9,16 +9,18 @@
     <TextView
         android:id="@+id/textTimeStamps"
         android:layout_width="333dp"
-        android:layout_height="225dp"
+        android:layout_height="288dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:fadeScrollbars="true"
         android:scrollbarStyle="insideOverlay"
         android:scrollbars="vertical"
         android:text="214 - Antpnio Nariño  00:12:52.200"
         android:textSize="18sp"
         android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline7"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,8 +42,8 @@
 
     <TextView
         android:id="@+id/textPenalizaciones"
-        android:layout_width="120dp"
-        android:layout_height="23dp"
+        android:layout_width="149dp"
+        android:layout_height="28dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="8dp"
@@ -101,7 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="257dp" />
+        app:layout_constraintGuide_begin="317dp" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline7"

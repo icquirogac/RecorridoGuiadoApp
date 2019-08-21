@@ -17,7 +17,6 @@ import com.example.recorridoguiadoun.R;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 public class FinishFragment extends Fragment {
 
@@ -31,7 +30,6 @@ public class FinishFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         myView = inflater.inflate(R.layout.finish,container,false);
-        DateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
         textFinish = myView.findViewById(R.id.textTimeStamps);
         textTiempo = myView.findViewById(R.id.textTime);
         textPenalizacion = myView.findViewById(R.id.textPenalizaciones);
@@ -39,7 +37,8 @@ public class FinishFragment extends Fragment {
         textFinish.setMovementMethod(new ScrollingMovementMethod());
 
         String stamps = "", timeS, nameS, full;
-        long h, m, s, diff;
+        long h, m, s, diff,initialDiff;
+
         for (Estacion estacion: GameController.saver.ruta){
             diff = estacion.stamp.getTime()-GameController.saver.start.getTime();
             diff /= 1000;
@@ -49,19 +48,31 @@ public class FinishFragment extends Fragment {
             h = diff / 60;
             timeS = String.format("%02d:%02d:%02d", h, m, s);
             nameS = String.format("%-25s", estacion.nombreCorto);
-            full = String.format("%s%5s\n", nameS, timeS);
-            System.out.println(">>>>Hora: " + full);
+            full = String.format("%s%20s\n", nameS, timeS);
 
             stamps += full;
         }
         textFinish.setText(stamps);
-        Date time = new Date(GameController.saver.finish.getTime()-GameController.saver.start.getTime());
-        textTiempo.setText(dateFormat.format(time));
+
+        initialDiff = GameController.saver.finish.getTime()-GameController.saver.start.getTime();
+        diff = initialDiff;
+        diff /= 1000;
+        s = diff % 60;
+        diff /= 60;
+        m = diff % 60;
+        h = diff / 60;
+        timeS = String.format("%02d:%02d:%02d", h, m, s);
+        textTiempo.setText(timeS);
         textPenalizacion.setText("+" + GameController.saver.penalizacion*15 + " Segundos");
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(time);
-        cal.add(Calendar.SECOND, GameController.saver.penalizacion*15);
-        textTotalTime.setText(dateFormat.format(cal.getTime()));
+        initialDiff += GameController.saver.penalizacion*15*1000;
+        diff = initialDiff;
+        diff /= 1000;
+        s = diff % 60;
+        diff /= 60;
+        m = diff % 60;
+        h = diff / 60;
+        timeS = String.format("%02d:%02d:%02d", h, m, s);
+        textTotalTime.setText(timeS);
         return myView;
     }
 }

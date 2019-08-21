@@ -2,17 +2,14 @@ package com.example.recorridoguiadoun.Controllers;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.util.Log;
-import android.view.Menu;
 
-import com.example.recorridoguiadoun.Activity.NavigationMenu;
 import com.example.recorridoguiadoun.Models.Constants;
 import com.example.recorridoguiadoun.Models.Estacion;
 import com.example.recorridoguiadoun.Models.Saver;
 import com.google.gson.Gson;
 
-import java.io.FileOutputStream;
-import java.io.ObjectOutputStream;
 import java.util.Calendar;
+import java.util.Date;
 
 
 public class GameController {
@@ -70,11 +67,8 @@ public class GameController {
     public static void won(){
         saver.won = true;
         saver.pos = -1;
-        Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.SECOND, 15*saver.penalizacion);
-        saver.finish = calendar.getTime();
+        saver.finish = Calendar.getInstance().getTime();
         saver.estadoActual = "Finish";
-
     }
 
     public static boolean verifyAnswer(int intento){
@@ -115,7 +109,7 @@ public class GameController {
         String[] exit = new String[saver.ruta.length];
 
         for(int i = 0; i < exit.length; i++){
-            if(!saver.ruta[i].isBlocked) exit[i] = saver.ruta[i].nombre;
+            if(!saver.ruta[i].isBlocked) exit[i] = saver.ruta[i].nombreCorto;
         }
 
         return exit;

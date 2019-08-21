@@ -1,12 +1,8 @@
 package com.example.recorridoguiadoun.Activity;
 
 import android.content.SharedPreferences;
-import android.content.Context;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
-import android.view.View;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
@@ -18,10 +14,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 
 import com.example.recorridoguiadoun.Controllers.GameController;
-import com.example.recorridoguiadoun.Models.Saver;
 import com.example.recorridoguiadoun.R;
 
-import java.util.Arrays;
 
 public class NavigationMenu extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
