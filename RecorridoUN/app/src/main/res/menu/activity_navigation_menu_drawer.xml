@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home"
+            />
+        <item
+            android:id="@+id/nav_estacion1"
+            android:title="@string/menu_hidden"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:enabled="false"/>
+
+        <item
+            android:id="@+id/nav_estacion2"
+            android:title="@string/menu_hidden"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_estacion3"
+            android:title="@string/menu_hidden"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_estacion4"
+            android:title="@string/menu_hidden"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_estacion5"
+            android:title="@string/menu_hidden"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_estacion6"
+            android:title="@string/menu_hidden"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_estacion7"
+            android:title="@string/menu_hidden"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_estacion8"
+            android:title="@string/menu_hidden"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_estacion9"
+            android:title="@string/menu_hidden"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_estacion10"
+            android:title="@string/menu_hidden"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:enabled="false"/>
+        <item
+            android:id="@+id/nav_estacion11"
+            android:title="@string/menu_hidden"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:enabled="false"/>
+        </group>
+
+
+
+</menu>
