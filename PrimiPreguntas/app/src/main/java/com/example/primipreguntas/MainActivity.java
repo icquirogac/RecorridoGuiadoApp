@@ -13,16 +13,13 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     Button facil;
-    Button medio;
-    Button dificil;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         facil = (Button)  findViewById(R.id.facil);
-        medio = (Button)  findViewById(R.id.medio);
-        dificil = (Button)  findViewById(R.id.dificil);
 
         facil.setOnClickListener(new View.OnClickListener() {
 
@@ -38,26 +35,5 @@ public class MainActivity extends AppCompatActivity {
 
         );
 
-        medio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Random rand = new Random();
-                int random = rand.nextInt(Constants.medio.length);
-                Constants.currentPregunta = Constants.medio[random];
-                Intent i = new Intent(MainActivity.this, Ask.class);
-                startActivity(i);
-            }
-        });
-
-        dificil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Random rand = new Random();
-                int random = rand.nextInt(Constants.dificil.length);
-                Constants.currentPregunta = Constants.dificil[random];
-                Intent i = new Intent(MainActivity.this, Ask.class);
-                startActivity(i);
-            }
-        });
     }
 }

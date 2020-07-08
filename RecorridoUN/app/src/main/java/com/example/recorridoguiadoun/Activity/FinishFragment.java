@@ -17,10 +17,12 @@ import com.example.recorridoguiadoun.R;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.TimeZone;
 
 public class FinishFragment extends Fragment {
 
     TextView textFinish;
+    TextView textStart;
     TextView textTiempo;
     TextView textPenalizacion;
     TextView textTotalTime;
@@ -35,12 +37,18 @@ public class FinishFragment extends Fragment {
         textPenalizacion = myView.findViewById(R.id.textPenalizaciones);
         textTotalTime = myView.findViewById(R.id.textTotalTime);
         textFinish.setMovementMethod(new ScrollingMovementMethod());
+        textStart = myView.findViewById(R.id.textTimeStart);
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("hh:mm a");
+        dateFormat.setTimeZone(TimeZone.getTimeZone("America/Bogota"));
+
+        textStart.setText(dateFormat.format(GameController.saver.start));
 
         String stamps = "", timeS, nameS, full;
         long h, m, s, diff,initialDiff;
 
         for (Estacion estacion: GameController.saver.ruta){
-            diff = estacion.stamp.getTime()-GameController.saver.start.getTime();
+            diff = estacion.stamp.getTime() - GameController.saver.start.getTime();
             diff /= 1000;
             s = diff % 60;
             diff /= 60;

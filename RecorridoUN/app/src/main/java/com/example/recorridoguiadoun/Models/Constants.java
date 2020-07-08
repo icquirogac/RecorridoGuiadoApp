@@ -10,13 +10,13 @@ public final class Constants {
                     new String[]{"Búho", "Escudo de la Universidad Nacional", "Árbol", "Mapa de Colombia"},
                     2),
             new Pregunta("¿Cuántas máquinas dispensadoras de alimentos y bebidas tiene el edificio?",
-                    new String[]{"3", "2", "4", "Ninguna"},
+                    new String[]{"1", "2", "4", "Ninguna"},
                     0),
             new Pregunta("¿Cuántas rampas tiene el edificio en su entrada para personas que se movilizan en silla de ruedas?",
                     new String[]{"1", "2", "3", "No tiene rampas, tiene únicamente un ascensor"},
                     0),
             new Pregunta("¿De qué color son los pisos del segundo nivel?",
-                    new String[]{"Son alfombrados de color gris", "Marrón porque son de madera", "Negros con marcas azules", "Blancos"},
+                    new String[]{"Son alfombrados de color gris", "Marrón porque son de madera", "Negros con marcas azules", "Grises"},
                     3),
             new Pregunta("¿En qué dirección predomina la ubicación de las tablas de madera que adornan la fachada del edificio?",
                     new String[]{"Horizontal", "Vertical", "Diagonal", "En muchas direcciones, formando una estrella"},
@@ -44,7 +44,7 @@ public final class Constants {
                     new String[]{"Sociología y  Lingüística", "Ingeniería civil y agrícola & Diseño grafico", "Agronomía  y Biologia", "Ingeniería civil y agrícola &  Lingüística"},
                     3),
             new Pregunta("¿Cual es el área aproximada del edificó en m2?",
-                    new String[]{"2500-2700", "2700 -2900 = 2853", "2900-3100", "2000-2500"},
+                    new String[]{"2500 - 2700", "2700 - 2900", "2900 - 3100", "2000 - 2500"},
                     1),
             new Pregunta("¿Qué arquitecto diseñó este edificio?",
                     new String[]{"Alberto Wills Ferro", "Juan Bonilla Plata", "Leopoldo Rother", "Bruno Violi"},
@@ -54,7 +54,7 @@ public final class Constants {
                     0),
             new Pregunta("¿Cuantas salidas de emergencia tiene el e214?",
                     new String[]{"4", "3", "2", "9*3/4"},
-                    2)
+                    1)
     };
     public static Pregunta preguntasPoli[] = {
             new Pregunta("¿Cuántos hornos posee el comedor central?",
@@ -133,7 +133,7 @@ public final class Constants {
                     new String[]{" A la izquierda", "A la derecha", "No hay recepción", "Al frente"},
                     0),
             new Pregunta("¿De qué color son los sillones que se encuentran en la sala de estar del primer piso del edificio?",
-                    new String[]{"Verde", "Azules", "Amarillos", "Rojos"},
+                    new String[]{"Verde y Rojos", "Azules y Rojos", "Amarillos", "Rojos y Grises"},
                     3),
             new Pregunta("¿El edificio cuenta con el servicio de microondas?",
                     new String[]{"No", "Si", "Si, pero de uso exclusivo para docentes, administrativos y trabajadores", "No es posible saberlo"},
@@ -157,7 +157,7 @@ public final class Constants {
                     new String[]{"4", "3", "2", "1"},
                     0),
             new Pregunta("¿De qué color es el letrero que dice \"cafetería\" ?",
-                    new String[]{"Verde", "Negro", "Azulo", "No existe ese letrero"},
+                    new String[]{"Verde", "Negro", "Azul", "No existe ese letrero"},
                     2)
     };
     public static Pregunta preguntasBiblioteca[] = {
@@ -169,7 +169,7 @@ public final class Constants {
                     3),
             new Pregunta("¿Que se puede consultar en el cuarto piso de la biblioteca?",
                     new String[]{"Literatura", "Artes", "Sala Patrimonial", "Salud"},
-                    0),
+                    2),
             new Pregunta("¿En cuántos pisos hay baños?",
                     new String[]{"5", "3", "4", "2"},
                     1),
